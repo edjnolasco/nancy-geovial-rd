@@ -1,7 +1,6 @@
 from __future__ import annotations
 
-from pathlib import Path
-from typing import Dict, List
+from typing import Any
 
 import pandas as pd
 
@@ -9,37 +8,43 @@ import pandas as pd
 def load_catalog() -> pd.DataFrame:
     """
     Load province catalog.
-    En producción esto leerá un archivo.
-    En tests será mockeado.
+    En produccion se implementara.
+    En tests sera mockeado.
     """
     raise NotImplementedError("Catalog loading not implemented.")
 
 
-def validate_province_coverage(df: pd.DataFrame) -> Dict[str, List[str]]:
+def validate_province_coverage(df: pd.DataFrame) -> dict[str, Any]:
     """
-    Compare dataset provinces against catalog.
-
-    Returns:
-        {
-            "missing": [...],
-            "extra": [...]
-        }
+    Compare dataset provinces against catalog and return coverage stats.
     """
     if "provincia" not in df.columns:
         raise ValueError("Column 'provincia' is required")
 
-    if df.empty:
-        raise ValueError("Input dataset is empty")
-
     catalog_df = load_catalog()
-
     catalog = set(catalog_df["provincia"].astype(str))
-    data = set(df["provincia"].astype(str))
+    expected = len(catalog)
 
-    missing = sorted(list(catalog - data))
-    extra = sorted(list(data - catalog))
+    if df.empty:
+        return {
+            "missing": sorted(list(catalog)),
+            "extra": [],
+            "is_complete": False,
+            "expected": expected,
+            "observed": 0,
+        }
+
+    observed_values = set(df["provincia"].astype(str))
+    observed = len(observed_values)
+
+    missing = sorted(list(catalog - observed_values))
+    extra = sorted(list(observed_values - catalog))
+    is_complete = len(missing) == 0
 
     return {
         "missing": missing,
         "extra": extra,
+        "is_complete": is_complete,
+        "expected": expected,
+        "observed": observed,
     }
