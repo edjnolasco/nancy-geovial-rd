@@ -1,9 +1,10 @@
 # 🚧 Nancy GeoVial RD
 
-![Python](https://img.shields.io/badge/Python-3.x-blue)
+[![CI](https://github.com/edjnolasco/nancy-geovial-rd/actions/workflows/ci.yml/badge.svg)](https://github.com/edjnolasco/nancy-geovial-rd/actions)
+[![codecov](https://codecov.io/gh/edjnolasco/nancy-geovial-rd/branch/main/graph/badge.svg)](https://codecov.io/gh/edjnolasco/nancy-geovial-rd)
+![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Status](https://img.shields.io/badge/status-active%20development-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![ML](https://img.shields.io/badge/Machine%20Learning-enabled-purple)
 
 Sistema de análisis y predicción de accidentes viales en República Dominicana basado en técnicas de Machine Learning y análisis geoespacial.
 
@@ -65,13 +66,12 @@ nancy-geovial-rd/
 
 ## ⚙️ Stack Tecnológico
 
-- Python 3.x
+- Python 3.11
 - Pandas / NumPy
 - Scikit-learn
 - TensorFlow / PyTorch
 - GeoPandas
 - Plotly / Matplotlib
-- Jupyter Notebook
 
 ---
 
@@ -97,6 +97,18 @@ Variables clave:
 4. Agregación provincia-mes
 5. Feature engineering temporal
 6. Integración geoespacial
+7. Dataset final
+
+---
+
+## Pipeline
+
+1. Ingesta
+2. Limpieza
+3. Normalizacion
+4. Agregacion provincia-mes
+5. Feature engineering
+6. Integracion geoespacial
 7. Dataset final
 
 ---
@@ -128,6 +140,28 @@ Enfoque: evaluación por ranking de provincias con mayor riesgo.
 ```bash
 pytest tests/
 ```
+
+CI ejecuta pruebas automaticamente en cada push y PR.
+
+---
+
+## Coverage
+
+Se utiliza **pytest-cov** para medir cobertura.
+
+### Ejecutar localmente
+
+```bash
+pytest --cov=src --cov-report=term
+```
+
+### CI + Codecov
+
+El pipeline:
+
+- Ejecuta tests
+- Genera `coverage.xml`
+- Envia resultados a Codecov
 
 ---
 
