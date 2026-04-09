@@ -1,10 +1,10 @@
 from __future__ import annotations
 
 from pathlib import Path
+
 import pandas as pd
 
 from .province_utils import canonical_province
-
 
 def load_province_catalog() -> pd.DataFrame:
     root = Path(__file__).resolve().parents[1]
