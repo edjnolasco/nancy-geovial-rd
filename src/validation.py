@@ -21,7 +21,12 @@ def load_province_catalog() -> pd.DataFrame:
         raise ValueError("El catálogo debe contener la columna 'provincia'.")
 
     catalog["provincia"] = catalog["provincia"].astype(str).apply(canonical_province)
-    catalog = catalog[["provincia"]].drop_duplicates().sort_values("provincia").reset_index(drop=True)
+    catalog = (
+    catalog[["provincia"]]
+    .drop_duplicates()
+    .sort_values("provincia")
+    .reset_index(drop=True)
+)
 
     return catalog
 
