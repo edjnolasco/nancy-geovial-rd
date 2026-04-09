@@ -1,9 +1,10 @@
 # 🚧 Nancy GeoVial RD
 
-[![CI](https://github.com/edjnolasco/nancy-geovial-rd/actions/workflows/ci.yml/badge.svg)](https://github.com/edjnolasco/nancy-geovial-rd/actions)
+[![CI](https://github.com/edjnolasco/nancy-geovial-rd/actions/workflows/ci.yml/badge.svg)](https://github.com/edjnolasco/nancy-geovial-rd/actions/workflows/ci.yml)
+[![Lint](https://github.com/edjnolasco/nancy-geovial-rd/actions/workflows/lint.yml/badge.svg)](https://github.com/edjnolasco/nancy-geovial-rd/actions/workflows/lint.yml)
 [![codecov](https://codecov.io/gh/edjnolasco/nancy-geovial-rd/branch/main/graph/badge.svg)](https://codecov.io/gh/edjnolasco/nancy-geovial-rd)
+[![Release](https://img.shields.io/badge/release-automated-blueviolet)](https://github.com/edjnolasco/nancy-geovial-rd/actions/workflows/release-please.yml)
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
-![Status](https://img.shields.io/badge/status-active%20development-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 Sistema de análisis y predicción de accidentes viales en República Dominicana basado en técnicas de Machine Learning y análisis geoespacial.
