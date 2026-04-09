@@ -1,0 +1,16 @@
+# CODEOWNERS
+
+# Default owner (all files)
+* @edjnolasco
+
+# Core source code
+/src/ @edjnolasco
+
+# Tests
+/tests/ @edjnolasco
+
+# CI/CD workflows
+/.github/ @edjnolasco
+
+# Documentation
+/docs/ @edjnolasco
