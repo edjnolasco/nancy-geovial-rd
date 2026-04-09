@@ -3,7 +3,6 @@ import pytest
 
 from src.validation import validate_province_coverage
 
-
 # ------------------------------------------------------------
 # Helpers
 # ------------------------------------------------------------
