@@ -1,1 +1,352 @@
-
+provincia,year,fallecidos
+Azua,2016,64
+Bahoruco,2016,21
+Barahona,2016,34
+Dajabón,2016,21
+Distrito Nacional,2016,65
+Duarte,2016,115
+El Seibo,2016,18
+Elías Piña,2016,7
+Espaillat,2016,75
+Hato Mayor,2016,19
+Hermanas Mirabal,2016,18
+Independencia,2016,11
+La Altagracia,2016,129
+La Romana,2016,51
+La Vega,2016,155
+María Trinidad Sánchez,2016,49
+Monseñor Nouel,2016,50
+Monte Plata,2016,47
+Montecristi,2016,36
+Pedernales,2016,5
+Peravia,2016,80
+Puerto Plata,2016,89
+Samaná,2016,45
+San Cristóbal,2016,108
+San José de Ocoa,2016,13
+San Juan,2016,55
+San Pedro de Macorís,2016,74
+Santiago,2016,150
+Santiago Rodríguez,2016,10
+Santo Domingo,2016,279
+Sánchez Ramírez,2016,47
+Valverde,2016,53
+Azua,2017,62
+Bahoruco,2017,17
+Barahona,2017,20
+Dajabón,2017,6
+Distrito Nacional,2017,61
+Duarte,2017,80
+El Seibo,2017,15
+Elías Piña,2017,9
+Espaillat,2017,58
+Hato Mayor,2017,13
+Hermanas Mirabal,2017,41
+Independencia,2017,6
+La Altagracia,2017,83
+La Romana,2017,42
+La Vega,2017,124
+María Trinidad Sánchez,2017,33
+Monseñor Nouel,2017,63
+Monte Plata,2017,28
+Montecristi,2017,22
+Pedernales,2017,3
+Peravia,2017,50
+Puerto Plata,2017,54
+Samaná,2017,34
+San Cristóbal,2017,110
+San José de Ocoa,2017,14
+San Juan,2017,60
+San Pedro de Macorís,2017,56
+Santiago,2017,122
+Santiago Rodríguez,2017,7
+Santo Domingo,2017,234
+Sánchez Ramírez,2017,27
+Valverde,2017,34
+Azua,2018,50
+Bahoruco,2018,12
+Barahona,2018,16
+Dajabón,2018,4
+Distrito Nacional,2018,82
+Duarte,2018,45
+El Seibo,2018,30
+Elías Piña,2018,7
+Espaillat,2018,34
+Hato Mayor,2018,10
+Hermanas Mirabal,2018,15
+Independencia,2018,5
+La Altagracia,2018,84
+La Romana,2018,2
+La Vega,2018,98
+María Trinidad Sánchez,2018,28
+Monseñor Nouel,2018,62
+Monte Plata,2018,38
+Montecristi,2018,26
+Pedernales,2018,2
+Peravia,2018,51
+Puerto Plata,2018,40
+Samaná,2018,27
+San Cristóbal,2018,129
+San José de Ocoa,2018,11
+San Juan,2018,75
+San Pedro de Macorís,2018,30
+Santiago,2018,151
+Santiago Rodríguez,2018,7
+Santo Domingo,2018,206
+Sánchez Ramírez,2018,11
+Valverde,2018,39
+Azua,2019,80
+Bahoruco,2019,19
+Barahona,2019,43
+Dajabón,2019,16
+Distrito Nacional,2019,90
+Duarte,2019,64
+El Seibo,2019,24
+Elías Piña,2019,7
+Espaillat,2019,62
+Hato Mayor,2019,14
+Hermanas Mirabal,2019,22
+Independencia,2019,12
+La Altagracia,2019,140
+La Romana,2019,36
+La Vega,2019,167
+María Trinidad Sánchez,2019,63
+Monseñor Nouel,2019,73
+Monte Plata,2019,41
+Montecristi,2019,30
+Pedernales,2019,5
+Peravia,2019,57
+Puerto Plata,2019,110
+Samaná,2019,36
+San Cristóbal,2019,147
+San José de Ocoa,2019,22
+San Juan,2019,64
+San Pedro de Macorís,2019,69
+Santiago,2019,166
+Santiago Rodríguez,2019,25
+Santo Domingo,2019,298
+Sánchez Ramírez,2019,41
+Valverde,2019,52
+Azua,2020,69
+Bahoruco,2020,29
+Barahona,2020,24
+Dajabón,2020,22
+Distrito Nacional,2020,75
+Duarte,2020,56
+El Seibo,2020,17
+Elías Piña,2020,12
+Espaillat,2020,39
+Hato Mayor,2020,18
+Hermanas Mirabal,2020,29
+Independencia,2020,9
+La Altagracia,2020,86
+La Romana,2020,41
+La Vega,2020,127
+María Trinidad Sánchez,2020,28
+Monseñor Nouel,2020,57
+Monte Plata,2020,59
+Montecristi,2020,38
+Pedernales,2020,5
+Peravia,2020,59
+Puerto Plata,2020,64
+Samaná,2020,53
+San Cristóbal,2020,165
+San José de Ocoa,2020,15
+San Juan,2020,33
+San Pedro de Macorís,2020,49
+Santiago,2020,121
+Santiago Rodríguez,2020,17
+Santo Domingo,2020,243
+Sánchez Ramírez,2020,34
+Valverde,2020,39
+Azua,2021,68
+Bahoruco,2021,20
+Barahona,2021,36
+Dajabón,2021,24
+Distrito Nacional,2021,84
+Duarte,2021,53
+El Seibo,2021,27
+Elías Piña,2021,8
+Espaillat,2021,59
+Hato Mayor,2021,16
+Hermanas Mirabal,2021,29
+Independencia,2021,12
+La Altagracia,2021,126
+La Romana,2021,52
+La Vega,2021,129
+María Trinidad Sánchez,2021,42
+Monseñor Nouel,2021,73
+Monte Plata,2021,57
+Montecristi,2021,52
+Pedernales,2021,6
+Peravia,2021,61
+Puerto Plata,2021,77
+Samaná,2021,30
+San Cristóbal,2021,110
+San José de Ocoa,2021,15
+San Juan,2021,58
+San Pedro de Macorís,2021,71
+Santiago,2021,151
+Santiago Rodríguez,2021,19
+Santo Domingo,2021,219
+Sánchez Ramírez,2021,38
+Valverde,2021,45
+Azua,2022,75
+Bahoruco,2022,16
+Barahona,2022,33
+Dajabón,2022,20
+Distrito Nacional,2022,91
+Duarte,2022,64
+El Seibo,2022,21
+Elías Piña,2022,15
+Espaillat,2022,54
+Hato Mayor,2022,14
+Hermanas Mirabal,2022,20
+Independencia,2022,9
+La Altagracia,2022,124
+La Romana,2022,48
+La Vega,2022,123
+María Trinidad Sánchez,2022,42
+Monseñor Nouel,2022,62
+Monte Plata,2022,53
+Montecristi,2022,37
+Pedernales,2022,6
+Peravia,2022,66
+Puerto Plata,2022,74
+Samaná,2022,49
+San Cristóbal,2022,116
+San José de Ocoa,2022,15
+San Juan,2022,50
+San Pedro de Macorís,2022,62
+Santiago,2022,121
+Santiago Rodríguez,2022,20
+Santo Domingo,2022,238
+Sánchez Ramírez,2022,29
+Valverde,2022,28
+Azua,2023,58
+Bahoruco,2023,26
+Barahona,2023,31
+Dajabón,2023,21
+Distrito Nacional,2023,91
+Duarte,2023,50
+El Seibo,2023,23
+Elías Piña,2023,9
+Espaillat,2023,59
+Hato Mayor,2023,19
+Hermanas Mirabal,2023,24
+Independencia,2023,19
+La Altagracia,2023,151
+La Romana,2023,55
+La Vega,2023,133
+María Trinidad Sánchez,2023,53
+Monseñor Nouel,2023,65
+Monte Plata,2023,47
+Montecristi,2023,38
+Pedernales,2023,12
+Peravia,2023,67
+Puerto Plata,2023,96
+Samaná,2023,36
+San Cristóbal,2023,162
+San José de Ocoa,2023,21
+San Juan,2023,62
+San Pedro de Macorís,2023,50
+Santiago,2023,121
+Santiago Rodríguez,2023,15
+Santo Domingo,2023,259
+Sánchez Ramírez,2023,31
+Valverde,2023,48
+Azua,2024,79
+Bahoruco,2024,25
+Barahona,2024,35
+Dajabón,2024,26
+Distrito Nacional,2024,107
+Duarte,2024,81
+El Seibo,2024,23
+Elías Piña,2024,11
+Espaillat,2024,65
+Hato Mayor,2024,15
+Hermanas Mirabal,2024,31
+Independencia,2024,3
+La Altagracia,2024,159
+La Romana,2024,48
+La Vega,2024,138
+María Trinidad Sánchez,2024,51
+Monseñor Nouel,2024,68
+Monte Plata,2024,66
+Montecristi,2024,33
+Pedernales,2024,11
+Peravia,2024,63
+Puerto Plata,2024,85
+Samaná,2024,52
+San Cristóbal,2024,183
+San José de Ocoa,2024,23
+San Juan,2024,75
+San Pedro de Macorís,2024,58
+Santiago,2024,172
+Santiago Rodríguez,2024,21
+Santo Domingo,2024,263
+Sánchez Ramírez,2024,48
+Valverde,2024,46
+Azua,2025,71
+Bahoruco,2025,23
+Barahona,2025,37
+Dajabón,2025,20
+Distrito Nacional,2025,105
+Duarte,2025,74
+El Seibo,2025,25
+Elías Piña,2025,13
+Espaillat,2025,89
+Hato Mayor,2025,28
+Hermanas Mirabal,2025,20
+Independencia,2025,8
+La Altagracia,2025,179
+La Romana,2025,41
+La Vega,2025,114
+María Trinidad Sánchez,2025,51
+Monseñor Nouel,2025,65
+Monte Plata,2025,54
+Montecristi,2025,41
+Pedernales,2025,5
+Peravia,2025,54
+Puerto Plata,2025,122
+Samaná,2025,36
+San Cristóbal,2025,196
+San José de Ocoa,2025,16
+San Juan,2025,61
+San Pedro de Macorís,2025,88
+Santiago,2025,139
+Santiago Rodríguez,2025,22
+Santo Domingo,2025,299
+Sánchez Ramírez,2025,41
+Valverde,2025,35
+AZUA,2026,2
+BAHORUCO,2026,4
+BARAHONA,2026,6
+DAJABON,2026,3
+DISTRITO NACIONAL,2026,7
+DUARTE,2026,8
+EL SEIBO,2026,6
+ELIAS PIÑA,2026,2
+ESPAILLAT,2026,6
+HERMANAS MIRABAL,2026,1
+INDEPENDENCIA,2026,3
+LA ALTAGRACIA,2026,16
+LA ROMANA,2026,3
+LA VEGA,2026,11
+MARIA TRINIDAD SANCHEZ,2026,4
+MONSEÑOR NOUEL,2026,15
+MONTE PLATA,2026,5
+MONTECRISTI,2026,8
+PEDERNALES,2026,1
+PERAVIA,2026,4
+PUERTO PLATA,2026,3
+SAMANA,2026,2
+SAN CRISTOBAL,2026,16
+SAN JOSE DE OCOA,2026,1
+SAN JUAN,2026,4
+SAN PEDRO DE MACORIS,2026,9
+SANCHEZ RAMIREZ,2026,3
+SANTIAGO,2026,18
+SANTIAGO RODRIGUEZ,2026,1
+SANTO DOMINGO,2026,24
+VALVERDE,2026,1
