@@ -1,8 +1,8 @@
 from __future__ import annotations
 
 import csv
-from pathlib import Path
 from io import BytesIO
+from pathlib import Path
 
 import pandas as pd
 import requests
