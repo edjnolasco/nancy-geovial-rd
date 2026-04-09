@@ -1,11 +1,10 @@
 from __future__ import annotations
 
-from pathlib import Path
 import argparse
 import sys
+from pathlib import Path
 
 import pandas as pd
-
 
 # ============================================================
 # CONFIGURACIÓN BASE
@@ -153,7 +152,12 @@ def print_validation_report(report: dict):
 # CORE
 # ============================================================
 
-def convert_digesett_csv(input_path: Path, output_path: Path, validate: bool = False, fail_on_incomplete: bool = False) -> Path:
+def convert_digesett_csv(
+    input_path: Path,
+    output_path: Path,
+    validate: bool = False,
+    fail_on_incomplete: bool = False,
+) -> Path:
     print(f"[INFO] Leyendo archivo: {input_path}")
 
     raw_df = read_digesett_file(input_path)

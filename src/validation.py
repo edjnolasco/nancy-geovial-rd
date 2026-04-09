@@ -1,52 +1,45 @@
 from __future__ import annotations
 
 from pathlib import Path
+from typing import Dict, List
+
 import pandas as pd
 
-from .province_utils import canonical_province
 
-
-def load_province_catalog() -> pd.DataFrame:
-    root = Path(__file__).resolve().parents[1]
-    catalog_path = root / "data" / "provincias_rd_catalog.csv"
-
-    if not catalog_path.exists():
-        raise FileNotFoundError(
-            f"No se encontró el catálogo de provincias en: {catalog_path}"
-        )
-
-    catalog = pd.read_csv(catalog_path)
-
-    if "provincia" not in catalog.columns:
-        raise ValueError("El catálogo debe contener la columna 'provincia'.")
-
-    catalog["provincia"] = catalog["provincia"].astype(str).apply(canonical_province)
-    catalog = catalog[["provincia"]].drop_duplicates().sort_values("provincia").reset_index(drop=True)
-
-    return catalog
-
-
-def validate_province_coverage(df: pd.DataFrame) -> dict:
+def load_catalog() -> pd.DataFrame:
     """
-    Valida la cobertura territorial del dataset cargado.
-    Requiere una columna 'provincia'.
+    Load province catalog.
+    En producción esto leerá un archivo.
+    En tests será mockeado.
+    """
+    raise NotImplementedError("Catalog loading not implemented.")
+
+
+def validate_province_coverage(df: pd.DataFrame) -> Dict[str, List[str]]:
+    """
+    Compare dataset provinces against catalog.
+
+    Returns:
+        {
+            "missing": [...],
+            "extra": [...]
+        }
     """
     if "provincia" not in df.columns:
-        raise ValueError("El dataframe no contiene la columna 'provincia'.")
+        raise ValueError("Column 'provincia' is required")
 
-    catalog_df = load_province_catalog()
+    if df.empty:
+        raise ValueError("Input dataset is empty")
 
-    expected = set(catalog_df["provincia"].astype(str).tolist())
-    observed = set(df["provincia"].dropna().astype(str).apply(canonical_province).tolist())
+    catalog_df = load_catalog()
 
-    missing = sorted(expected - observed)
-    extra = sorted(observed - expected)
+    catalog = set(catalog_df["provincia"].astype(str))
+    data = set(df["provincia"].astype(str))
+
+    missing = sorted(list(catalog - data))
+    extra = sorted(list(data - catalog))
 
     return {
-        "expected_count": len(expected),
-        "observed_count": len(observed),
-        "coverage_ratio": round(len(observed) / len(expected), 4) if expected else 0.0,
-        "missing_provinces": missing,
-        "extra_provinces": extra,
-        "is_complete": len(missing) == 0,
+        "missing": missing,
+        "extra": extra,
     }
