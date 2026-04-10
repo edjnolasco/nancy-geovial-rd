@@ -51,23 +51,19 @@ PROVINCE_ALIASES = {
     "santo domingo": "Santo Domingo",
     "santodomingo": "Santo Domingo",
     "valverde": "Valverde",
-
     # =========================
     # Casos especiales GADM / históricos
     # =========================
-
     # El Seibo
     "el seibo": "El Seibo",
     "elseibo": "El Seibo",
     "el seybo": "El Seibo",
     "elseybo": "El Seibo",
-
     # Elías Piña
     "elias pina": "Elías Piña",
     "eliaspina": "Elías Piña",
     "laestrelleta": "Elías Piña",
     "la estrelleta": "Elías Piña",
-
     # Hermanas Mirabal (Salcedo histórico)
     "hermanas mirabal": "Hermanas Mirabal",
     "hermanasmirabal": "Hermanas Mirabal",

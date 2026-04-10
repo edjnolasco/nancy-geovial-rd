@@ -1,0 +1,67 @@
+target-version = "py311"
+line-length = 100
+indent-width = 4
+
+exclude = [
+  ".git",
+  ".github",
+  ".venv",
+  "venv",
+  "__pycache__",
+  "build",
+  "dist",
+  ".pytest_cache",
+  ".mypy_cache",
+  ".ruff_cache",
+]
+
+[lint]
+select = [
+  "E",    # pycodestyle errors
+  "W",    # pycodestyle warnings
+  "F",    # pyflakes
+  "I",    # isort
+  "N",    # pep8-naming
+  "UP",   # pyupgrade
+  "B",    # flake8-bugbear
+  "A",    # flake8-builtins
+  "C4",   # flake8-comprehensions
+  "SIM",  # flake8-simplify
+  "T20",  # print / pprint
+  "RET",  # flake8-return
+  "ARG",  # unused arguments
+  "PTH",  # pathlib over os.path
+  "ERA",  # commented-out code
+  "RUF",  # Ruff-specific rules
+]
+
+ignore = [
+  "E203",   # formatting compatibility
+  "E266",   # too strict for comments
+  "E501",   # let formatter handle long lines where possible
+  "RET504", # sometimes hurts readability
+]
+
+fixable = ["ALL"]
+unfixable = [
+  "T20",  # do not auto-fix prints silently
+]
+
+preview = false
+
+[lint.per-file-ignores]
+"tests/**/*.py" = [
+  "S101",   # assert used (if Bandit rules are later enabled)
+  "ARG001", # unused function arguments in tests/fixtures
+  "T20",    # prints can be acceptable during test debugging
+]
+"__init__.py" = [
+  "F401",   # re-exports are often intentional
+]
+
+[format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+docstring-code-format = true
+skip-magic-trailing-comma = false

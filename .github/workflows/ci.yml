@@ -1,32 +1,34 @@
 name: CI
 
 on:
-  push:
-    branches: [ main, develop ]
   pull_request:
-    branches: [ main, develop ]
+    branches: [main]
+  push:
+    branches: [main]
 
 jobs:
-  test:
+  lint-and-test:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Setup Python
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install tools
         run: |
-          pip install -r requirements.txt
-          pip install pytest pytest-cov
+          python -m pip install --upgrade pip
+          pip install ruff pytest pandas scikit-learn
 
-      - name: Run tests with coverage
-        run: |
-          pytest --cov=src --cov-report=xml --cov-report=term
+      - name: Ruff check
+        run: ruff check . --output-format=github
 
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4
-        with:
-          files: coverage.xml
+      - name: Ruff format check
+        run: ruff format . --check
+
+      - name: Pytest
+        run: pytest -v

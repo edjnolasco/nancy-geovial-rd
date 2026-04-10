@@ -21,6 +21,7 @@ CATALOG_PATH = ROOT / "data" / "provincias_rd_catalog.csv"
 # UTILIDADES
 # ============================================================
 
+
 def normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     df.columns = [str(c).strip().lower() for c in df.columns]
@@ -93,6 +94,7 @@ def clean_dataset(df: pd.DataFrame) -> pd.DataFrame:
 # VALIDACIÓN TERRITORIAL
 # ============================================================
 
+
 def load_catalog() -> pd.DataFrame:
     if not CATALOG_PATH.exists():
         raise FileNotFoundError(f"No se encontró el catálogo: {CATALOG_PATH}")
@@ -152,6 +154,7 @@ def print_validation_report(report: dict):
 # CORE
 # ============================================================
 
+
 def convert_digesett_csv(
     input_path: Path,
     output_path: Path,
@@ -187,6 +190,7 @@ def convert_digesett_csv(
 # CLI
 # ============================================================
 
+
 def build_parser():
     parser = argparse.ArgumentParser(description="Conversor DIGESETT → CSV limpio DSS")
 
@@ -196,13 +200,13 @@ def build_parser():
     parser.add_argument(
         "--validate",
         action="store_true",
-        help="Valida cobertura territorial contra catálogo"
+        help="Valida cobertura territorial contra catálogo",
     )
 
     parser.add_argument(
         "--fail-on-incomplete",
         action="store_true",
-        help="Falla si faltan provincias (útil para CI)"
+        help="Falla si faltan provincias (útil para CI)",
     )
 
     return parser
@@ -217,7 +221,7 @@ def main():
             args.input,
             args.output,
             validate=args.validate,
-            fail_on_incomplete=args.fail_on_incomplete
+            fail_on_incomplete=args.fail_on_incomplete,
         )
         return 0
     except Exception as e:
@@ -227,4 +231,3 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

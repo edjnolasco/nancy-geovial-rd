@@ -30,12 +30,19 @@ PROVINCES_GEOJSON_URL = (
 
 PROVINCE_SYNONYMS = ["provincia", "provincias", "province"]
 YEAR_SYNONYMS = ["año", "ano", "year"]
-VALUE_SYNONYMS = ["fallecidos", "fallecimiento", "cantidad", "total_fallecidos", "valor"]
+VALUE_SYNONYMS = [
+    "fallecidos",
+    "fallecimiento",
+    "cantidad",
+    "total_fallecidos",
+    "valor",
+]
 
 
 # ============================================================
 # DETECCIÓN AUTOMÁTICA DE CSV
 # ============================================================
+
 
 def detect_csv_delimiter(sample_text: str) -> str:
     """
@@ -94,6 +101,7 @@ def read_local_csv_with_auto_detection(path: str | Path) -> pd.DataFrame:
 # LECTURA DE ARCHIVOS
 # ============================================================
 
+
 def read_dataframe_from_bytes(
     content: bytes,
     filename_hint: str = "dataset.csv",
@@ -129,6 +137,7 @@ def load_local_dataframe(path: str | Path) -> pd.DataFrame:
 # ============================================================
 # DESCARGA REMOTA
 # ============================================================
+
 
 def fetch_remote_dataframe(
     url: str,
@@ -169,6 +178,7 @@ def fetch_geojson_text(
 # UTILIDADES DE COLUMNAS
 # ============================================================
 
+
 def find_column(df: pd.DataFrame, candidates: list[str]) -> str | None:
     """
     Busca una columna por nombre usando normalización defensiva.
@@ -186,6 +196,7 @@ def find_column(df: pd.DataFrame, candidates: list[str]) -> str | None:
 # ============================================================
 # NORMALIZACIÓN DEL DATASET OFICIAL
 # ============================================================
+
 
 def normalize_official_provinces(df: pd.DataFrame) -> pd.DataFrame:
     """
@@ -229,11 +240,8 @@ def normalize_official_provinces(df: pd.DataFrame) -> pd.DataFrame:
 
     out["year"] = out["year"].astype(int)
     out["month"] = 1
-    out["fecha"] = pd.to_datetime(
-        dict(year=out["year"], month=out["month"], day=1)
-    )
+    out["fecha"] = pd.to_datetime(dict(year=out["year"], month=out["month"], day=1))
 
     out = out.sort_values(["year", "provincia"]).reset_index(drop=True)
 
     return out
-

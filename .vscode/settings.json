@@ -1,8 +1,11 @@
 {
-  "python.defaultInterpreterPath": ".venv/bin/python",
-  "editor.formatOnSave": true,
-  "python.formatting.provider": "none",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.ruff": "explicit"
-  }
+    "python.defaultInterpreterPath": ".venv/bin/python",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.ruff": "explicit"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "ruff.nativeServer": "on"
 }
