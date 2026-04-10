@@ -1,1 +1,9 @@
-
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "release-type": "python",
+  "packages": {
+    ".": {
+      "package-name": "nancy-geovial-rd"
+    }
+  }
+}
