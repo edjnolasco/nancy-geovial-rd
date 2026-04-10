@@ -1,0 +1,8 @@
+{
+  "python.defaultInterpreterPath": ".venv/bin/python",
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "none",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.ruff": "explicit"
+  }
+}
